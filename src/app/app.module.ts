@@ -9,6 +9,8 @@ import { InnerComponent } from './inner/inner.component';
 import { CellComponent } from './inner/cell.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { ActualContentComponent } from './content-projection/actual-content.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { OpComponent } from './databinding/op.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ActualContentComponent } from './content-projection/actual-content.comp
     InnerComponent,
     CellComponent,
     ContentProjectionComponent,
-    ActualContentComponent
+    ActualContentComponent,
+    DatabindingComponent,
+    OpComponent
   ],
   imports: [
     BrowserModule,
