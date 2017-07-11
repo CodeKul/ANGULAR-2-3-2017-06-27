@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { RemoteComponent } from './remote/remote.component';
+import { InnerComponent } from './inner/inner.component';
+import { CellComponent } from './inner/cell.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RemoteComponent
+    RemoteComponent,
+    InnerComponent,
+    CellComponent
   ],
   imports: [
     BrowserModule,
