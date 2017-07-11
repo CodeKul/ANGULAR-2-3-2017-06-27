@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { RemoteComponent } from './remote/remote.component';
 import { InnerComponent } from './inner/inner.component';
 import { CellComponent } from './inner/cell.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { ActualContentComponent } from './content-projection/actual-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RemoteComponent,
     InnerComponent,
-    CellComponent
+    CellComponent,
+    ContentProjectionComponent,
+    ActualContentComponent
   ],
   imports: [
     BrowserModule,
