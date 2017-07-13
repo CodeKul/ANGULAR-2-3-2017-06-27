@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  EventEmitter,
+  Output
+} from '@angular/core';
 
 @Component({
   selector: 'app-op',
@@ -28,9 +33,13 @@ import { Component, OnInit } from '@angular/core';
 export class OpComponent implements OnInit {
 
   date: string;
+  
+  @Output()
+  onDate: EventEmitter<string>;
 
   constructor() {
     this.date = new Date().toString();
+    this.onDate = new EventEmitter();
   }
 
   ngOnInit() {
@@ -38,5 +47,6 @@ export class OpComponent implements OnInit {
 
   onOkay() {
     this.date = new Date().toString();
+    this.onDate.emit(this.date);
   }
 }

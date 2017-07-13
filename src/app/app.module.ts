@@ -11,6 +11,7 @@ import { ContentProjectionComponent } from './content-projection/content-project
 import { ActualContentComponent } from './content-projection/actual-content.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { OpComponent } from './databinding/op.component';
+import { IpComponent } from './databinding/ip.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OpComponent } from './databinding/op.component';
     ContentProjectionComponent,
     ActualContentComponent,
     DatabindingComponent,
-    OpComponent
+    OpComponent,
+    IpComponent
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,12 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <app-op></app-op>
+    <app-op (onDate)="nm=$event" ></app-op>
   </div>
 </div>
+<div class="row">
+  <div class="col-md-12">
+    <app-ip [myType]="'checkbox'"></app-ip>
+  </div>
+</div>
+
