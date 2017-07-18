@@ -33,7 +33,7 @@ import {
 export class OpComponent implements OnInit {
 
   date: string;
-  
+
   @Output()
   onDate: EventEmitter<string>;
 

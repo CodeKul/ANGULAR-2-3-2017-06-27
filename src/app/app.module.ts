@@ -12,6 +12,9 @@ import { ActualContentComponent } from './content-projection/actual-content.comp
 import { DatabindingComponent } from './databinding/databinding.component';
 import { OpComponent } from './databinding/op.component';
 import { IpComponent } from './databinding/ip.component';
+import { InterCompComComponent } from './inter-comp-com/inter-comp-com.component';
+import { HiComponent } from './inter-comp-com/hi.component';
+import { HelloComponent } from './inter-comp-com/hello.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { IpComponent } from './databinding/ip.component';
     ActualContentComponent,
     DatabindingComponent,
     OpComponent,
-    IpComponent
+    IpComponent,
+    InterCompComComponent,
+    HiComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
