@@ -4,5 +4,5 @@
       <h1>Angular 2</h1><hr>    
     </div>
   </div>
- <app-inter-comp-com></app-inter-comp-com>
+ <app-lifecycle [my]="title" *ngIf="isRem"></app-lifecycle><input type="button" (click)="isRem = !isRem">
 </div>

@@ -8,4 +8,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works! CodeKul';
+
+  justChange() {
+    this.title = "" + new Date().getMilliseconds();
+  }
 }

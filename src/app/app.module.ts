@@ -15,6 +15,9 @@ import { IpComponent } from './databinding/ip.component';
 import { InterCompComComponent } from './inter-comp-com/inter-comp-com.component';
 import { HiComponent } from './inter-comp-com/hi.component';
 import { HelloComponent } from './inter-comp-com/hello.component';
+import { TwoWayBindingComponent } from './inter-comp-com/two-way-binding.component';
+import { LocalRefsComponent } from './local-refs/local-refs.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { HelloComponent } from './inter-comp-com/hello.component';
     IpComponent,
     InterCompComComponent,
     HiComponent,
-    HelloComponent
+    HelloComponent,
+    TwoWayBindingComponent,
+    LocalRefsComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
