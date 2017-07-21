@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inter-comp-com.component.css']
 })
 export class InterCompComComponent implements OnInit {
-
-  imgVal: string;
+  imgVal: string = 'hell0';
+  imgVal2 : string = 'hi';
 
   constructor() { }
 

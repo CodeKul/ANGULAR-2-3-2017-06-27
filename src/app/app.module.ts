@@ -18,6 +18,8 @@ import { HelloComponent } from './inter-comp-com/hello.component';
 import { TwoWayBindingComponent } from './inter-comp-com/two-way-binding.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { SizerDirective } from './directives/sizer.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     HelloComponent,
     TwoWayBindingComponent,
     LocalRefsComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    DirectivesComponent,
+    SizerDirective
   ],
   imports: [
     BrowserModule,
