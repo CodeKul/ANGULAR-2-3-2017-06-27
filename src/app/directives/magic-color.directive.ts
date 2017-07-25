@@ -41,7 +41,9 @@ export class MagicColorDirective implements OnInit {
     return `rgb(${red}, ${green}, ${blue})`;
   }
 
-  constructor() {   }
+  constructor() {
+    this.border = '5px solid black';
+  }
   ngOnInit() {
     this.bakCol = this.myStyle.col;
     this.border = this.myStyle.bord;
