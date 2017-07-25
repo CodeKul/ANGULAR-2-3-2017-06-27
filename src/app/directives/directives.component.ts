@@ -9,6 +9,15 @@ export class DirectivesComponent implements OnInit {
 
   xyz: boolean;
   pqr: boolean;
+
+  mobiles = [
+    'Android',
+    'Ios',
+    'Windows',
+    'Ubuntu',
+    'RiM'
+  ];
+
   constructor() { }
 
   ngOnInit() {
