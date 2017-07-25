@@ -2,20 +2,24 @@ import {
   Directive,
   HostBinding,
   HostListener,
-  Input
+  Input,
+  OnInit
 } from '@angular/core';
 
 @Directive({
   selector: '[magic]'
 })
-export class MagicColorDirective {
+export class MagicColorDirective implements OnInit {
+
+  @Input()
+  myStyle: any;
 
   @Input('magic')
   @HostBinding('style.backgroundColor')
   bakCol: string;
 
   @HostBinding('style.border')
-  border:string;
+  border: string;
 
   @HostListener('mouseenter')
   onAbc() {
@@ -37,7 +41,9 @@ export class MagicColorDirective {
     return `rgb(${red}, ${green}, ${blue})`;
   }
 
-
-  constructor() { }
-
+  constructor() {   }
+  ngOnInit() {
+    this.bakCol = this.myStyle.col;
+    this.border = this.myStyle.bord;
+  }
 }
