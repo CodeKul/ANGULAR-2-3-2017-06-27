@@ -20,6 +20,8 @@ import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SizerDirective } from './directives/sizer.directive';
+import { RevisedDirectiveComponent } from './directives/revised-directive.component';
+import { MagicColorDirective } from './directives/magic-color.directive';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { SizerDirective } from './directives/sizer.directive';
     LocalRefsComponent,
     LifecycleComponent,
     DirectivesComponent,
-    SizerDirective
+    SizerDirective,
+    RevisedDirectiveComponent,
+    MagicColorDirective
   ],
   imports: [
     BrowserModule,
