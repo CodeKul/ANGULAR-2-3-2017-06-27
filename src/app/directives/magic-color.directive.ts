@@ -1,7 +1,8 @@
 import {
   Directive,
   HostBinding,
-  HostListener
+  HostListener,
+  Input
 } from '@angular/core';
 
 @Directive({
@@ -9,17 +10,23 @@ import {
 })
 export class MagicColorDirective {
 
+  @Input('magic')
   @HostBinding('style.backgroundColor')
   bakCol: string;
+
+  @HostBinding('style.border')
+  border:string;
 
   @HostListener('mouseenter')
   onAbc() {
     this.bakCol = this.magicColor();
+    this.border = '1px solid black';
   }
 
   @HostListener('mouseleave')
   onXyz() {
     this.bakCol = this.magicColor();
+    this.border = '1px solid white';
   }
 
   magicColor(): string {
